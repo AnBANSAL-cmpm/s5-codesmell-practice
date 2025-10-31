@@ -32,7 +32,7 @@ function setup() {
 
   function updateUI() {
     // Update the counter display
-    (if!ctr) return; //deno is complaining about this, I know i check for this before
+    if (!ctr) return; //deno is complaining about this, I know i check for this before
     ctr.innerHTML = `${count}`;
     // Update the document title
     document.title = "Clicked " + count;
